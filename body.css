@@ -3,14 +3,81 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+    color: unset;
+    font-size: 16px;
+    text-decoration: none;
+}
+
 #test{
     color: #f8f8f2;
 }
 
+#image{
+    width: 25rem;
+    height: 25rem;
+    position: absolute;
+    
+    margin-top: 13rem;
+    margin-left: 10rem;
+
+    border: #ffb86c solid 2px;
+    background-image: url("img/prisonrealm.png");
+    /* background-position-y: 120%; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    /* animation-duration: 1.3s;
+    animation-name: float, bordercolor;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; */
+    animation: infinite alternate linear 1.3s float,
+    infinite alternate linear 5s bordercolor;
+}
+
+@keyframes float {
+    0%{
+        background-position-y: 100%;
+    }
+    100%{
+        background-position-y: 30%;
+    }
+}
+
+@keyframes bordercolor {
+    0%{
+        border: #f1fa8c solid 2px;
+    }
+    14%{
+        border: #ffb86c solid 2px;
+    }
+    28%{
+        border: #ff5555 solid 2px;
+    }
+    42%{
+        border: #ff79c6 solid 2px;
+    }
+    56%{
+        border: #8be9fd solid 2px;
+    }
+    70%{
+        border: #50fa7b solid 2px;
+    }
+    84%{
+        border: #bd93f9 solid 2px;
+    }
+    100%{
+        border: #ffb86c solid 2px;
+    }
+}
+
+
+
 #upperdiv{
     margin-top: 3rem;
-    margin-left: 30rem;
-    margin-right: 30rem;
+    margin-left: 45rem;
+    margin-right: 15rem;
 
     padding-left: 5rem;
     padding-right: 5rem;
@@ -26,20 +93,28 @@ body{
 #time{
     color: #50fa7b;
 }
-a{
+.weatherwidget-io{
     border-radius: 300px !important;
     border: #6272a4 solid 2px;
 }
 
-#content{
-    margin-top: 1rem;
-    margin-left: 30rem;
-    margin-right: 30rem;
+#second{
+    position: absolute;
+    margin-left: 20rem;
+}
 
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+#third{
+    position: absolute;
+    margin-left: 38rem;
+}
+
+#content1{
+    
+    margin-top: 1rem;
+    margin-left: 45rem;
+    margin-right: 15rem;
+
+    padding: 1rem;
     
     text-align: left;
     background: #2d303fe0;
@@ -47,12 +122,69 @@ a{
     border: #6272a4 solid 2px;
 
     height: 35em;
+    letter-spacing: 2px;
+    text-rendering: geometricPrecision;
+    text-overflow: ellipsis;
 }
 
-#grid{
-    display: grid;
+#reddit{
+    color: #ff5555;
+    list-style: none;
 }
-/* 
-#grid-1{
-    display: 
-} */
+#reddit a{
+    border-bottom: #ff5555 solid 1px;
+    margin-left: 1rem;
+}
+#reddit a:hover{
+    font-weight: 1000;
+}
+
+
+#mail{
+    color: #859de2;
+    list-style: none;
+}
+#mail a{
+    border-bottom: #859de2 solid 1px;
+    margin-left: 1rem;
+}
+
+
+#stream{
+    color: #8be9fd;
+    list-style: none;
+}
+#stream a{
+    border-bottom: #8be9fd solid 1px;
+    margin-left: 1rem;
+}
+
+#dev{
+    color: #50fa7b;
+    list-style: none;
+}
+
+#dev a{
+    border-bottom: #50fa7b solid 1px;
+    margin-left: 1rem;
+}
+
+#gaming{
+    color: #ffb86c;
+    list-style: none;
+}
+
+#gaming a{
+    border-bottom: #ffb86c solid 1px;
+    margin-left: 1rem;
+}
+
+#roguelikes{
+    color: #bd93f9;
+    list-style: none;
+}
+
+#roguelikes a{
+    border-bottom: #bd93f9 solid 1px;
+    margin-left: 1rem;
+}

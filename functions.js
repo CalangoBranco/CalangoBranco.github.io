@@ -1,5 +1,4 @@
-let time = new Date(1,3,12,14,8,9,1);
-
+let time = new Date()
 
 window.onload = function(){
     
