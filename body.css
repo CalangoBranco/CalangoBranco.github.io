@@ -148,6 +148,9 @@ a{
     border-bottom: #859de2 solid 1px;
     margin-left: 1rem;
 }
+#mail a:hover{
+    font-weight: 1000;
+}
 
 
 #stream{
@@ -159,6 +162,11 @@ a{
     margin-left: 1rem;
 }
 
+#stream a:hover{
+    font-weight: 1000;
+}
+
+
 #dev{
     color: #50fa7b;
     list-style: none;
@@ -167,6 +175,10 @@ a{
 #dev a{
     border-bottom: #50fa7b solid 1px;
     margin-left: 1rem;
+}
+
+#dev a:hover{
+    font-weight: 1000;
 }
 
 #gaming{
@@ -179,6 +191,10 @@ a{
     margin-left: 1rem;
 }
 
+#gaming a:hover{
+    font-weight: 1000;
+}
+
 #roguelikes{
     color: #bd93f9;
     list-style: none;
@@ -187,4 +203,8 @@ a{
 #roguelikes a{
     border-bottom: #bd93f9 solid 1px;
     margin-left: 1rem;
+}
+
+#roguelikes a:hover{
+    font-weight: 1000;
 }
